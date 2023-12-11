@@ -13,6 +13,7 @@ import { BankingComponent } from './banking/banking.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { CreateusersComponent } from './createusers/createusers.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { NotifyGuard } from './notify.guard';
 
 const routes: Routes = [
   {path:'', component:LoginComponent},
@@ -20,14 +21,14 @@ const routes: Routes = [
   {path:'dashboard', component:DashboardComponent,  canActivate:[AuthenticationGuard],children:[
   {path:'structuraldirectives',component:StructuraldirectivesComponent},
   {path:'login', component:LoginComponent},
-  {path:'marks', component:MarksComponent},
+  {path:'marks',canDeactivate:[NotifyGuard] ,component:MarksComponent},
   {path:'pipes', component:PipesComponent},
   {path:'events',component:EventsComponent},
   {path:'cars', component:CarsComponent},
-  {path:'products', component:ProductsComponent},
-  {path:'users', component:UsersComponent},
+  {path:'products', canDeactivate:[NotifyGuard],component:ProductsComponent},
+  {path:'users', canDeactivate:[NotifyGuard], component:UsersComponent},
   {path:'banking', component:BankingComponent},
-  {path:'createusers', component:CreateusersComponent},
+  {path:'createusers',canDeactivate:[NotifyGuard], component:CreateusersComponent},
   {path:'pagination', component:PaginationComponent }
 ]},
 {path:'',component:LoginComponent}
