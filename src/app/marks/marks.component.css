@@ -1,4 +1,4 @@
-table, th {
+table {
     border: 1px solid rgb(181, 96, 96);
     border-radius: 10px;
   }
@@ -17,3 +17,7 @@ table, th {
   .red{
     color: red;
   }
+th{
+  background-color: #fff;
+  color: salmon;
+}

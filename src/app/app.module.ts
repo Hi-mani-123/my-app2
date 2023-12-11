@@ -19,7 +19,6 @@ import {HttpClientModule} from '@angular/common/http';
 import { BankingComponent } from './banking/banking.component';
 import { CreateusersComponent } from './createusers/createusers.component';
 import { PaginationComponent } from './pagination/pagination.component';
-import { GalaryComponent } from './galary/galary.component';
 
 
 
@@ -39,9 +38,8 @@ import { GalaryComponent } from './galary/galary.component';
     UsersComponent,
     BankingComponent,
     CreateusersComponent,
-    MemesComponent,
     PaginationComponent,
-    GalaryComponent,
+
    
     
    

@@ -12,7 +12,6 @@ import { UsersComponent } from './users/users.component';
 import { BankingComponent } from './banking/banking.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { CreateusersComponent } from './createusers/createusers.component';
-import { MemesComponent } from './memes/memes.component';
 import { PaginationComponent } from './pagination/pagination.component';
 
 const routes: Routes = [
@@ -29,7 +28,6 @@ const routes: Routes = [
   {path:'users', component:UsersComponent},
   {path:'banking', component:BankingComponent},
   {path:'createusers', component:CreateusersComponent},
-  {path:'memes',component:MemesComponent},
   {path:'pagination', component:PaginationComponent }
 ]},
 {path:'',component:LoginComponent}
