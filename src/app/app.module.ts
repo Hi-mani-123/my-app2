@@ -19,6 +19,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { BankingComponent } from './banking/banking.component';
 import { CreateusersComponent } from './createusers/createusers.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { PricePipe } from './price.pipe';
 
 
 
@@ -39,6 +40,7 @@ import { PaginationComponent } from './pagination/pagination.component';
     BankingComponent,
     CreateusersComponent,
     PaginationComponent,
+    PricePipe,
 
    
     

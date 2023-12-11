@@ -14,9 +14,9 @@
     <tbody>
         <tr *ngFor="let user of users">
             <td>{{user.name}}</td>
-            <td>{{user.phone}}</td>
+            <td>{{user.phone?.pin }}</td>
             <td>{{user.city}}</td>
-            <td>{{user.fee}}</td>
+            <td>{{user.fee | price}}</td>
             <td>{{user.id}}</td>
             <td>
                 <img src="{{user.image}}" alt="" >
