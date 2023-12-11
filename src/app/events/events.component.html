@@ -1,0 +1,9 @@
+<p>events works!</p>
+<h1>EVENTSREGISTRATION</h1>
+<input type="text" [(ngModel)]="text" placeholder="Enter details">
+<button (click)="submit()">SUBMIT</button>
+<h2>REGISTERED USERS</h2>
+<ol>
+    <li *ngFor="let user of users">{{user}}</li>
+</ol>
+<button (click)="delete()">delete</button> 

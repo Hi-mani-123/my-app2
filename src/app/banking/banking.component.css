@@ -1,0 +1,26 @@
+table{
+    width: 100%;
+    /* padding: 30px; */
+}
+.table-responsive {
+column-gap: 15px;
+margin-bottom: 20px;
+color: chocolate;
+
+}
+tr{
+    border-color: #43bf00;
+}
+th{
+    background-color: #43bf00;
+    color: black;
+}
+td{
+    color: whitesmoke;
+    display: inline-flexbox;
+}
+tbody{
+    background-color: brown;
+    color: rgb(30, 24, 24);
+
+}

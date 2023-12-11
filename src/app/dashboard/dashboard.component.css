@@ -1,0 +1,62 @@
+.parent{
+    height: 100%;
+    width:100%;
+    display: flex;
+    background-color: aqua;
+    /* background-image: url("file:///C:/Users/Pratap%20Raj/Desktop/link.jpg"); */
+ }
+ .left{
+    height: 100%;
+    width: 25%;
+    background-color:rgb(31, 65, 53);
+    text-align: center;
+    color: white;
+ }
+ .right{
+    height: 100%;
+    width: 75%;
+    border-color: antiquewhite;
+    overflow: auto;
+ }
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    color: rgb(194, 230, 221);
+    height: 50px;
+}
+/* h3:hover{
+    cursor: pointer;
+    
+    width: auto;
+    background-color: gray;
+    color: #c06666;
+   
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+} */
+h3{
+    height: 40px;
+    padding: 15px;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: goldenrod;
+   
+}
+
+h3:hover{
+    cursor: pointer;
+   
+    border-radius: 20px;
+    width: auto;
+    background-color:gray;
+    color: black;
+    
+}
+
+button{
+    background-color: red;
+    color: #fff;
+}

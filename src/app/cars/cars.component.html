@@ -1,0 +1,18 @@
+<p>cars works!</p>
+
+<input type="text" placeholder="Brands" name="cars"><br><br><br>
+<label for="">benz4</label>
+<input type="radio" name="cars" value="benz4" [(ngModel)]="brands">
+<label for="">bmw</label>
+<input type="radio" name="cars" value="bmw" [(ngModel)]="brands">
+<label for="">volvo</label>
+<input type="radio" name="cars" value="volvo" [(ngModel)]="brands">
+<br> <br>
+
+
+<img *ngIf="brands=='benz4'"
+    src="https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+<img *ngIf="brands=='bmw'"
+    src="https://c4.wallpaperflare.com/wallpaper/66/220/943/bmw-cars-car-sport-car-wallpaper-preview.jpg" alt="">
+<img *ngIf="brands=='volvo'"src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/131135/xc90-exterior-left-front-three-quarter.jpeg?isig=0&q=80" >
+    

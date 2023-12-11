@@ -1,0 +1,30 @@
+<!-- <p>banking works!</p> -->
+<table class="table" border="1" [cellPadding]="10">
+    <thead>
+       <tr>
+
+
+        <th>account_name</th>
+        <th>available_balance</th>
+        <th>account_number</th>
+        <th>city</th>
+        <th>profie_picture</th>
+        <th>id</th>
+       </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let banking of banks">
+        <td>{{banking.account_name}}</td>
+        <td>{{banking.available_balance}}</td>
+        <td>{{banking.account_number}}</td>
+        <td>{{banking.city}}</td>
+        <td>
+            <img src="{{banking.profie_picture}}" alt="">
+        </td>
+        <td>{{banking.id}}</td>
+
+    
+    
+    </tr>
+    </tbody>
+</table>

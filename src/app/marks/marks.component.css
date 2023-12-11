@@ -1,0 +1,19 @@
+table, th {
+    border: 1px solid rgb(181, 96, 96);
+    border-radius: 10px;
+  }
+  td{
+    width: 150px;
+  }
+  .green{
+    color: green;
+  }
+  .blue{
+    color: blue;
+  }
+  .yellow{
+    color: yellow;
+  }
+  .red{
+    color: red;
+  }
