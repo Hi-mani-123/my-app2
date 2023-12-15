@@ -14,6 +14,16 @@ import { AuthenticationGuard } from './authentication.guard';
 import { CreateusersComponent } from './createusers/createusers.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { NotifyGuard } from './notify.guard';
+import { MemesComponent } from './memes/memes.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { UserformComponent } from './userform/userform.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
+import { VehicledetailsComponent } from './vehicledetails/vehicledetails.component';
+import { ParentComponent } from './parent/parent.component';
+
+
 
 const routes: Routes = [
   {path:'', component:LoginComponent},
@@ -27,9 +37,22 @@ const routes: Routes = [
   {path:'cars', component:CarsComponent},
   {path:'products', canDeactivate:[NotifyGuard],component:ProductsComponent},
   {path:'users', canDeactivate:[NotifyGuard], component:UsersComponent},
-  {path:'banking', component:BankingComponent},
+  {path:'banking/:id', component:BankingComponent},
+  {path:'edit-user/:id', component:BankingComponent},
+  {path:'create-user/:id', component:BankingComponent},
   {path:'createusers',canDeactivate:[NotifyGuard], component:CreateusersComponent},
-  {path:'pagination', component:PaginationComponent }
+  {path:'pagination', component:PaginationComponent },
+  {path:'memes', component:MemesComponent},
+  {path:'flipkart', component:FlipkartComponent},
+  {path:'userdetails/:id', component:UserdetailsComponent},
+  {path:'edit-user/:id', component:CreateusersComponent},
+  {path:'create-user/:id', component:CreateusersComponent},
+  {path:'userform', component:UserformComponent},
+  {path:'vehicle', component:VehicleComponent},
+  {path:'createvehicle', component:CreatevehicleComponent},
+  {path:'vehicledetails/:id', component:VehicledetailsComponent},
+  {path:'editvehicle-details/:id', component:CreatevehicleComponent},
+  {path:'parent', component:ParentComponent}
 ]},
 {path:'',component:LoginComponent}
   

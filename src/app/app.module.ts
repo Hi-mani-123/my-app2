@@ -20,6 +20,16 @@ import { BankingComponent } from './banking/banking.component';
 import { CreateusersComponent } from './createusers/createusers.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { PricePipe } from './price.pipe';
+import { MemesComponent } from './memes/memes.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { UserformComponent } from './userform/userform.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { BankingdetailsComponent } from './bankingdetails/bankingdetails.component';
+import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
+import { VehicledetailsComponent } from './vehicledetails/vehicledetails.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 
 
@@ -38,10 +48,20 @@ import { PricePipe } from './price.pipe';
     ProductsComponent,
     UsersComponent,
     BankingComponent,
-    CreateusersComponent,
     PaginationComponent,
     PricePipe,
-
+    MemesComponent,
+    CreateusersComponent,
+    FlipkartComponent,
+    UserdetailsComponent,
+    UserformComponent,
+    VehicleComponent,
+    BankingdetailsComponent,
+    CreatevehicleComponent,
+    VehicledetailsComponent,
+    ParentComponent,
+    ChildComponent
+    
    
     
    
@@ -51,7 +71,7 @@ import { PricePipe } from './price.pipe';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

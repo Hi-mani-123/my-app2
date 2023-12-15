@@ -7,19 +7,31 @@ import { Observable } from 'rxjs';
 })
 export class UsersService {
 
-private baseurl:any=("https://6128991386a213001729f9df.mockapi.io/test/v1/student");
 
-  constructor(private _httpClient:HttpClient) { }
-  getUsers():Observable<any>{
-    return this._httpClient.get(this.baseurl);
+  private baseurl: any = ("https://6128991386a213001729f9df.mockapi.io/test/v1/student");
 
+  private baseurl2: any = ('https://dummyjson.com/users');
+  constructor(private _httpCLient: HttpClient) { }
+
+
+
+
+  getUsers(): Observable<any> {
+    return this._httpCLient.get(this.baseurl)
   }
-  getfilterusers(term:string):Observable<any>{
-    return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/student");
-  }
-  getfilteruser(term:string):Observable<any>{
 
-    return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/student?filter="+term)
-
+  getUser(id: any): Observable<any> {
+    return this._httpCLient.get(this.baseurl + "/" + id);
   }
+  postUsers(data: any): Observable<any> {
+    return this._httpCLient.post(this.baseurl + '/', data)
+  }
+
+  deletUser(data: any): Observable<any> {
+    return this._httpCLient.delete(this.baseurl + '/', data)
+  }
+  editUser(id: any, data: any): Observable<any> {
+    return this._httpCLient.put(this.baseurl + "/" + id, data);
+  }
+
 }

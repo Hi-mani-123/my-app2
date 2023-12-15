@@ -1,5 +1,5 @@
 <p>users works!</p>
-<input type="text", placeholder="search" (keypress)="getFilteredUsers()"*[ngModel]="term">
+<input type="text", placeholder="search" *[ngModel]="term">
 <table class="table">
     <thead>
         <tr>
@@ -14,7 +14,7 @@
     <tbody>
         <tr *ngFor="let user of users">
             <td>{{user.name}}</td>
-            <td>{{user.phone?.pin }}</td>
+            <td>{{user.phone }}</td>
             <td>{{user.city}}</td>
             <td>{{user.fee | price}}</td>
             <td>{{user.id}}</td>
@@ -22,6 +22,11 @@
                 <img src="{{user.image}}" alt="" >
             </td>
             <td>{{users.id}}</td>
+            <td>
+                <button (click)="edit(user.id)">edit</button>
+                <button (click)="view(user.id)">view</button>
+                <button (click)="deleteUser(user.id)">delete</button>
+            </td>
         </tr>
     </tbody>
 </table>
