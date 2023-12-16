@@ -30,6 +30,14 @@ import { CreatevehicleComponent } from './createvehicle/createvehicle.component'
 import { VehicledetailsComponent } from './vehicledetails/vehicledetails.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { ItemsComponent } from './items/items.component';
+import { NavComponent } from './nav/nav.component';
+import { CartComponent } from './cart/cart.component';
+import { RatingComponent } from './rating/rating.component';
+import { StarsComponent } from './stars/stars.component';
+import { InputcountComponent } from './inputcount/inputcount.component';
+import { AboutModule } from './about/about.module';
+
 
 
 
@@ -60,7 +68,15 @@ import { ChildComponent } from './child/child.component';
     CreatevehicleComponent,
     VehicledetailsComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    ItemsComponent,
+    NavComponent,
+    CartComponent,
+    RatingComponent,
+    StarsComponent,
+  
+    InputcountComponent,
+       
     
    
     
@@ -72,6 +88,7 @@ import { ChildComponent } from './child/child.component';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

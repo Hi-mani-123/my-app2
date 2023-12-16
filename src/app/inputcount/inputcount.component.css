@@ -1,0 +1,17 @@
+p{
+    margin-left: 100px;
+    align-items: center;
+    color: brown;
+    padding: 10px;
+    font-size: 30px;
+    text-shadow: 1px 0.5px ;
+}
+div{
+    border: 1px solid gray;
+    width: 250px;
+    margin-left: 100px;
+    
+}
+textarea{
+    color:darkblue;
+}
